@@ -1,0 +1,31 @@
+Containers > Rows > Columns.
+
+You only need one container. If you want to add another grid inside a column, just add another row with nested columns.
+
+A container is there to provide width constraints on responsive widths and to add padding so that content doesn't touch the edge of the browser. 
+
+Rows provide a wrapper for columns, and have a -15px margin to negate the 15px margin on containers. Never use a row outside of a container, only inside a container or inside another column.
+
+The column padding is what gives your content the space it needs to not touch the edge of the browser or content in other columns. 
+
+Nested rows overlap the padding of the column they are inside, just like the container.
+
+Containers are required when using the grid system. Containers can be nested, but most layouts do not require nested containers.
+
+.container - responsive, fixed width
+.container-fluid - full width container spanning viewport
+.container-{breakpoint} - specify that a class is 100% wide until the breakpoint is reached
+
+Only columns may be immediate children of rows.
+
+Using flexbox means that grid columns without a specified width will automatically layout as equal width columns.
+
+Column widths are in percentages, they are always fluid and sized relative to their parent element.
+
+.no-gutters on the .row will remove margin between individual columns
+
+There are five grid breakpoints for responsive grids, extra small, small, medium, large, and extra large.
+
+Grid Breakpoints are based on MINIMUM width media queries, and apply to that breakpoint and those above it.
+
+col-{breakpoint}-auto sizes columns based on the natural width of their content.
