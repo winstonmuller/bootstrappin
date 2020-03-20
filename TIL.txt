@@ -1,3 +1,5 @@
+CONTAINERS
+
 Containers > Rows > Columns.
 
 You only need one container. If you want to add another grid inside a column, just add another row with nested columns.
@@ -29,3 +31,25 @@ There are five grid breakpoints for responsive grids, extra small, small, medium
 Grid Breakpoints are based on MINIMUM width media queries, and apply to that breakpoint and those above it.
 
 col-{breakpoint}-auto sizes columns based on the natural width of their content.
+
+NAVBARS
+Bootstrap has a powerful, responsive navigation header that includes support for branding, navigation, and support for the collapse plugin.
+
+The components/navbar documentation details how the navbar works, and the supported content. 
+
+There are special classes to define special parts of what makes a navbar, "a navbar".
+
+A reasonable structure is 
+<nav class="navbar">
+ - <div class="container">
+ - - <ul class="nav navbar-nav"
+
+How it works:
+Navbars require a wrapping .navbar with .navbar-expand-size to enable responsive collapsing.
+Navbars and their contents are fluid BY DEFAULT.
+With boostrap, a navigation bar can extend or collapse, depending on the screen size.
+
+Navbars come with built in support for a handful of sub-components. (Bootstrap classes make html elements "components"?)
+.navbar-brand for the brand name.
+.navbar-nav for a full-height lightweight navigation (including support for dropdowns)
+
